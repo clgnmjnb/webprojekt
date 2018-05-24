@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'im Wunderland';
+  src: url('../fonts/Im Wunderland.WOFF') format('woff');
+  src: url('../fonts/Im Wunderland.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'bear hugs';
+  src: url('../fonts/BEARHUGSBYRATTICSASSIN-Regular.WOFF') format('woff');
+  src: url('../fonts/BEARHUGSBYRATTICSASSIN-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'nixie one';
+  src: url('../fonts/NixieOne.WOFF') format('woff');
+  src: url('../fonts/NixieOne.ttf') format('truetype');
+}
+
+body, html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background: white;
+}
+
+a:hover {
+  opacity: 0.9;
+}
+
+.wrapper {
+  overflow: hidden;
+  background-image: url("../images/pattern.png");
+  height: 100vh;
+  width: 100vw;
+}
+
+.equipmentCard {
+  position: relative;
+  width: 50%;
+}
+
+.imageCard {
+  opacity: 1;
+  display: block;
+  width: 375px !important;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  margin-left: 2%;
+}
+
+.equipmentCard:hover .imageCard {
+  opacity: 0.3;
+}
+
+.equipmentCard:hover .middleT {
+  opacity: 1;
+}
+
+#spiele {
+  list-style-type: none;
+  margin-top: 2%;
+  margin-left: -2.5%;
+}
+
+#spiele li {
+  float: left;
+  margin-left: 5.25%;
+}
+
+#spiele li a {
+  display: block;
+}
+
+.collapsible {
+  background-color: white;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 425px;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 1em;
+}
+
+.collapsible:hover {
+  background-color: rgb(210, 207, 207);
+}
+
+.gameTitle {
+  color: black;
+}
+
+#cards a {
+  text-decoration: none;
+  color: black;
+  margin-right: auto;
+}
+
+#cards a:visited {
+  text-decoration: none;
+  color: black;
+}

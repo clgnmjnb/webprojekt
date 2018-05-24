@@ -1,0 +1,374 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="../images/icon_black.ico">
+  <title>Benjamin Golic</title>
+  <link href="../css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 900, function() {
+            window.location.hash = hash;
+          });
+        }
+      });
+    })
+  </script>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <nav class="navbar navbar-fixed-top navbar-default mx-auto" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav mx-auto">
+          <li><a href="#start">Start</a></li>
+          <li><a href="#modelfotos">Modelfotos</a></li>
+          <li><a href="#Naturfotos">Naturfotos</a></li>
+          <!-- <li><a href="#videos">Videos</a></li> -->
+          <li><a href="#equipment">Equipment</a></li>
+          <li><a href="#aboutme">About me</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="wrapper" class="everything">
+    <div id="start" class="parallax1 container-fluid">
+      <h1 id="box1" class="text-right name">Benjamin Golic</h1>
+      <div class="modal" id="modal-name">
+        <div class="modal-sandbox"></div>
+        <div class="modal-box">
+          <div class="modal-header">
+            <div class="close-modal">&#10006;</div>
+            <h1 id="titleUmfrage">Umfrage: Mini-Games</h1>
+          </div>
+          <div class="modal-body">
+            <p id="frage">Spielen Sie gerne Mini-Games?</p>
+            <div id="answer">
+              <a href="games.html"><button id="yes" class="answerB" onclick="getAnswer("yes")" href="games.html">Ja</button></a>
+              <button id="no" class="close-modal">Nein</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modelfotos" class="parallax2 container-fluid">
+      <h1 id="box2" class="text-right name">Modelfotos</h1>
+      <div id="accordion">
+        <div id="accdiv">
+          <ul id="accul">
+            <li class="accli">
+              <a>
+                <div class="imgdiv">
+                  <div class="imgwrap"><img src="../content-images/model/insta1_m.jpg" alt="1. pic"></div>
+                </div>
+                <div class="text bottom-left">
+                  <p><span>Model on Instagram:</span></p>
+                  <p><span>stefaanpn</span></p>
+                </div>
+              </a>
+            </li>
+
+            <li class="accli">
+              <a>
+                <div class="imgdiv">
+                  <div class="imgwrap"><img id="zweitesPic" src="../content-images/model/insta2_m.jpg" alt="2. pic"></div>
+                </div>
+                <div class="text bottom-left">
+                  <p><span>Model on Instagram:</span></p>
+                  <p><span>stefaanpn</span></p>
+                </div>
+              </a>
+            </li>
+
+            <li class="accli">
+              <a>
+                <div class="imgdiv">
+                  <div class="imgwrap"><img src="../content-images/model/insta3_m.jpg" alt="3. pic"></div>
+                </div>
+                <div class="text bottom-left">
+                  <p><span>Model on Instagram:</span></p>
+                  <p><span>stefaanpn</span></p>
+                </div>
+              </a>
+            </li>
+
+            <li class="accli">
+              <a>
+                <div class="imgdiv">
+                  <div class="imgwrap"><img src="../content-images/model/insta4_m.jpg" alt="4. pic"></div>
+                </div>
+                <div class="text bottom-left">
+                  <p><span>Model on Instagram:</span></p>
+                  <p><span>stefaanpn</span></p>
+                </div>
+              </a>
+            </li>
+
+            <li class="accli">
+              <a>
+                <div class="imgdiv">
+                  <div class="imgwrap"><img src="../content-images/model/insta5_m.jpg" alt="5. pic"></div>
+                </div>
+                <div class="text bottom-left">
+                  <p><span>Model on Instagram:</span></p>
+                  <p><span>stefaanpn</span></p>
+                </div>
+              </a>
+            </li>
+
+            <li class="accli">
+              <a>
+                <div class="imgdiv">
+                  <div class="imgwrap"><img src="../content-images/model/insta6_m.jpg" alt="6. pic"></div>
+                </div>
+                <div class="text bottom-left">
+                  <p><span>Model on Instagram:</span></p>
+                  <p><span>stefaanpn</span></p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="accordion2">
+        <div id="accdiv2">
+          <ul id="accul2">
+            <li class="accli2">
+              <a>
+                <div class="imgdiv2">
+                  <div class="imgwrap2"><img src="../content-images/model/horizontal/m2/insta1_m2.jpg" alt=""></div>
+                </div>
+                <div class="text2 bottom-left">
+                  <p><span>Model on Instagram:</span></p>
+                  <p><span>stefaanpn</span></p>
+                </div>
+              </a>
+            </li>
+
+            <li class="accli2">
+              <a>
+                <div class="imgdiv2">
+                  <div class="imgwrap2"><img src="../content-images/model/horizontal/m2/insta2_m2.jpg" alt=""></div>
+                </div>
+                <div class="text2 bottom-left">
+                  <p><span>Model on Instagram:</span></p>
+                  <p><span>stefaanpn</span></p>
+                </div>
+              </a>
+            </li>
+
+            <li class="accli2">
+              <a>
+                <div class="imgdiv2">
+                  <div class="imgwrap2"><img src="../content-images/model/horizontal/m2/insta7_m2.jpg" alt=""></div>
+                </div>
+                <div class="text2 bottom-left">
+                  <p><span>Model on Instagram:</span></p>
+                  <p><span>stefaanpn</span></p>
+                </div>
+              </a>
+            </li>
+
+            <li class="accli2">
+              <a>
+                <div class="imgdiv2">
+                  <div class="imgwrap2"><img src="../content-images/model/horizontal/m2/insta9_m2.jpg" alt=""></div>
+                </div>
+                <div class="text2 bottom-left">
+                  <p><span>Model on Instagram:</span></p>
+                  <p><span>stefaanpn</span></p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <div id="Naturfotos" class="parallax3 container-fluid">
+      <h1 id="box3" class="text-right name">Naturfotos</h1>
+      <div id="accordionNatur">
+        <div id="accdivNatur">
+          <ul id="acculNatur">
+            <li class="accliNatur">
+              <div class="imgdivNatur">
+                <div class="imgwrapNatur"><img id="erstesPicNatur" src="../content-images/natur/natur1_m.jpg" alt="1. pic"></div>
+              </div>
+            </li>
+
+            <li class="accliNatur">
+              <div class="imgdivNatur">
+                <div class="imgwrapNatur"><img id="zweitesPicNatur" src="../content-images/natur/natur2_m.jpg" alt="2. pic"></div>
+              </div>
+            </li>
+
+            <li class="accliNatur">
+              <div class="imgdivNatur">
+                <div class="imgwrapNatur"><img id="drittesPicNatur" src="../content-images/natur/natur3_m.jpg" alt="3. pic"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="equipment" class="parallax4 container-fluid">
+      <h1 id="box4" class="text-right name">Equipment</h1>
+      <div id="cards">
+        <ul id="EquipCards">
+          <li>
+            <button class="collapsible">
+              <img src="../images/pctest.png" alt="Avatar" class="imageCard" style="width:100%">
+              <h1 class="cardTitle">Mein PC</h1>
+            </button>
+            <div class="content">
+              <ul id="myPC">
+                <li><a href="http://www.e-tec.at/frame1/details.php?art=254509">Gehäuse: be Quiet! Dark Base 700</a></li>
+                <li><a href="https://www.kmcomputer.de/detail/index/sArticle/44192">Mainboard: MSi SLI Plus X99A</a></li>
+                <li><a href="https://www.amazon.de/INTEL-Core-i7-5820K-LGA2011V3-Cache/dp/B00MMLXIKY/">Prozessor: i7 5820K</a></li>
+                <li><a href="https://www.amazon.de/Corsair-280-mm-Radiator-Softwaresteuerung-RGB-Beleuchtung-Zero-RPM-L%C3%BCftermodus/dp/B077G3C6HH/">Prozessorkühler: Corsair H115i Pro</a></li>
+                <li><a href="https://www.amazon.de/HyperX-HX421C14FBK2-Arbeitsspeicher-2133MHz-compatible/dp/B00TPQPUWI/">RAM: HyperX Fury 64GB DDR4-2133MHz</a></li>
+                <li><a href="http://www.e-tec.at/frame1/details.php?art=223165">Grafikkarte: MSi GTX 1070 Gaming X</a></li>
+                <li><a href="https://www.amazon.de/Samsung-MZ-75E500B-EU-interne-schwarz/dp/B00P736UEU/">SSD: Samsung Evo 850 250GB</a></li>
+                <li><a href="https://www.kmcomputer.de/detail/index/sArticle/9169">HDD: WesternDigital Blue 5TB</a></li>
+                <li><a href="https://www.amazon.de/Corsair-VS650-PC-Netzteil-Plus-Watt/dp/B00LMBT0IO/">Netzteil: Corsair V650</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button class="collapsible">
+              <img src="../images/pczub.png" alt="Avatar" class="imageCard" style="width:100%">
+              <h1 class="cardTitle">PC-Zubehör</h1>
+            </button>
+            <div class="content">
+              <ul id="myPC">
+                <li><a href="https://www.amazon.de/BenQ-RL2455-Reaktionszeit-Technology-eQualizer/dp/B01H07FVOK/">Monitor: 2x BenQ 24Zoll 1ms</a></li>
+                <li><a href="https://www.amazon.de/Razer-BlackWidow-Tournament-Chroma-Layout/dp/B074F88D7F/">Tastatur: Razer BlackWidow V2</a></li>
+                <li><a href="https://www.amazon.de/Performance-Rechts-Linksh%C3%A4nder-programmierbare-Maustasten/dp/B016A9XAXS/">Maus: Roccat Kova</a></li>
+                <li><a href="https://www.amazon.de/Razer-Surface-Gaming-Mauspad-schwarz/dp/B077ZLW8XD">Mauspad: Razer Vespula V2</a></li>
+                <li><a href="https://www.amazon.de/Microsoft-Controller-Wireless-Adapter-Windows/dp/B01LY58HQJ/">Controller: Xbox One + Wireless Adapter</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button class="collapsible">
+              <img src="../images/kamera.png" alt="Avatar" class="imageCard" style="width:100%">
+              <h1 class="cardTitle">Kamera-Setup</h1>
+            </button>
+            <div class="content">
+              <ul id="myPC">
+                <li><a href="https://www.amazon.de/Panasonic-DC-GH5EG-K-Systemkamera-Bildstabilisator-Magnesiumgeh%C3%A4use/dp/B01N7RZQ0G/">Kamera: Panasonic Lumix GH5</a></li>
+                <li><a href="https://www.amazon.de/Panasonic-H-FS12060E-F3-5-5-6-Bildstabilisator-Spritzwasserschutz/dp/B01DWNN7AG/">1. Objektiv: Lumix 12-60mm F3.5-5.6</a></li>
+                <li><a href="https://www.amazon.de/Sigma-Micro-Four-Thirds-Objektivbajonett/dp/B077BWK9ZD">2. Objektiv: Sigma 16mm F1.4 DC DN</a></li>
+                <li><a href="https://www.amazon.de/Ultrahoch-Digitalkamera-Videolicht-Videolampen-Videobeleuchtung/dp/B004TJ6JH6/">Videoleuchte: Neewer CN-160</a></li>
+                <li><a href="https://www.amazon.de/TARION-Kamerastativ-Panorama-Kugelkopf-Schnellwechselplatte-Eingezogen/dp/B077TVC487">Mini-Stativ: TARION Q166</a></li>
+                <li><a href="https://www.amazon.de/Hama-Dreibeinstativ-3-Wege-Kopf-Tragetasche-Champagner/dp/B0000WXD0W/">Stativ: Hama Star 61</a></li>
+                <li><a href="https://www.amazon.de/Zhiyun-Brushless-Handheld-Stabilisator-Panasonic-schwarz/dp/B01NBNHUTZ">Gimbal: Zhiyun Crane 1 V2</a></li>
+                <li><a href="https://www.amazon.de/Transcend-UHS-II-EXTREME-Speicherkarte-Schreiben/dp/B015E8K868/">SD-Karte: Transcend 64GB U3 UHS-II</a></li>
+                <li><a href="https://www.amazon.de/Panasonic-DMW-BLF19-Ladeger%C3%A4t-USB-Anschluss-Displaypad/dp/B06XXWQWXG/">Extra Akkus: Patona 3-1 SET</a></li>
+                <li><a href="https://www.amazon.de/Qualit%C3%A4ts-Netzteil-Panasonic-DMC-GH3A-DMC-GH3H-schwarz/dp/B074MCJ5PM">Akku-Dummy: Subtel GH5 Netzteil</a></li>
+                <li><a href="https://www.amazon.de/Elgato-Cam-Link-Camcorder-Capture-Ger%C3%A4t/dp/B073XPFSDJ/">Anschluss für PC: Elgato Cam Link</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button class="collapsible">
+              <img src="../images/mikro.png" alt="Avatar" class="imageCard" style="width:100%">
+              <h1 class="cardTitle">Audio-Setup</h1>
+            </button>
+            <div class="content">
+              <ul id="myPC">
+                <li><a href="https://www.amazon.de/Rode-NT-1A-Gro%C3%9Fmembran-Kondensatormikrofon-goldbedampfter-Nierenkapsel-Silber/dp/B0002PSCQM">Mikrofon: RODE NT1A</a></li>
+                <li><a href="https://www.amazon.de/Rode-Microphones-PSA-1-Gelenkarmstativ/dp/B001D7UYBO/">Mikrofonarm: RODE PSA1</a></li>
+                <li><a href="https://www.amazon.de/Rode-Microphones-PSM-elastische-Mikrofonhalterung/dp/B000WA8KYG">Mikrofonspinne: RODE PSM1</a></li>
+                <li><a href="https://www.amazon.de/Yamaha-AG03-Mehrzweckmixer/dp/B00ST0FOO0">Mischpult: Yamaha AG03</a></li>
+                <li><a href="https://www.amazon.de/JBL-Ear-Kopfh%C3%B6rer-Steuerung-Mikrofon-schwarz/dp/B01MG62Z5M/">In-Ear Kopfhörer: JBL T 110</a></li>
+                <li><a href="https://www.amazon.com/Beats-Studio-Wired-Over-Ear-Headphone/dp/B008CS5T76">Over-Ear Kopfhörer: Beats Studio</a></li>
+                <li><a href="https://www.amazon.de/Apple-a1523-Airpods-In-Ear-Kopfh%C3%B6rer-wei%C3%9F/dp/B01MCW7EOW/">Bluetooth Kopfhörer: Apple AirPods</a></li>
+                <li><a href="https://www.amazon.de/Logitech-Bluetooth-Lautsprechersystem-Subwoofer-Smartphone/dp/B01L6L52T0/">Lautsprecher: Logitech Z337</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="aboutme" class="parallax5 container-fluid">
+      <h1 id="box5" class="text-right name">About me</h1>
+      <div id="textAboutMe">
+        <h1 id="myName">Benjamin Golic</h1><br />
+        <p>I am 15 years old and I am attending the higher technical college Leonding. My first contact with photography was in the first year of the higher technical college.
+        </p>
+      </div>
+    </div>
+    <div id="contact" class="parallax6 container-fluid">
+      <h1 id="box6" class="text-right name">Kontakt</h1>
+      <div id="content">
+        <div id="contactForm">
+          <section id="hire">
+            <form>
+              <div class="field name-box">
+                <input type="text" id="name" placeholder="Vorname Nachname" />
+                <label for="name">Name</label>
+                <span class="ss-icon">check</span>
+              </div>
+              <div class="field email-box">
+                <input type="text" id="email" placeholder="max.mustermann@musteremail.mustercom" />
+                <label for="email">Email</label>
+                <span class="ss-icon">check</span>
+              </div>
+              <div class="field msg-box">
+                <textarea id="msg" rows="4" placeholder="Nachricht..." /></textarea>
+                <label for="msg">Msg</label>
+                <span class="ss-icon">check</span>
+              </div>
+              <input class="button" type="submit" value="Send" />
+            </form>
+          </section>
+        </div>
+      </div>
+      <div id="socialmedia" class="contactSocialMedia">
+        <a href="https://www.instagram.com/benjamin.glc/"><img class="sm" src="../images/ig.png" alt="instagram"></a>
+        <a href="https://www.snapchat.com/add/xbnjmn"><img class="sm" src="../images/sc.png" alt="snapchat"></a>
+        <a href="https://www.youtube.com/channel/UCk3aLWlNvx3nWo68Hh_IYNg"><img class="sm" src="../images/yt.png" alt="youtube"></a>
+        <a href="mailto:benjamin.glc@gmx.at"><img class="sm" src="../images/mail.png" alt="mail"></a>
+      </div>
+    </div>
+  </div>
+  <section id="preloader">
+    <div id="dots">
+      <p>Loading...</p>
+      <div class="dot" style=" animation-name:preloader_1;"></div>
+      <div class="dot" style=" animation-name:preloader_2;"></div>
+      <div class="dot" style=" animation-name:preloader_3;"></div>
+      <div class="dot" style=" animation-name:preloader_4;"></div>
+    </div>
+    <div id="bg_left" class="pre_half"></div>
+    <div id="bg_right" class="pre_half"></div>
+  </section>
+  <script src="../script/navBGColorChange.js"></script>
+  <script src="../script/preloader.js"></script>
+  <script src="../script/collapsibleScript.js"></script>
+</body>
+
+</html>

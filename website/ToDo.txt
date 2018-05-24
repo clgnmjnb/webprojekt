@@ -1,0 +1,20 @@
+Main-Site:
+
+-Navbar-Backgroundcolor wenn man bei gewisser Div ist (http://www.elexpress.de/blog/js-jquery-snippet-abfrage-ob-element-im-sichtbereich-liegt/)
+
+-Lightbox Gallery
+
+-Contact Formular Überprüfung
+
+-AboutMe Text Schreiben
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Games (TicTacToe, Catch the Color, Speed Puzzle(?)):
+
+  -TicTacToe erweitern, dass zweite Leute gegeneinander spielen können
+
+  -SpeedPuzzle üerbelegen, umsetzen
+
+Games.html:
+  -Alles
